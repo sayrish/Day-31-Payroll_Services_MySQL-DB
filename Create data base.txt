@@ -1,0 +1,43 @@
+mysql> show databases;				#shows list of databases
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| person             |
+| sakila             |
+| studentinfo        |
+| sys                |
+| world              |
++--------------------+
+8 rows in set (0.00 sec)
+
+mysql> create database payroll_service;	#create a database named: payroll_service
+Query OK, 1 row affected (0.00 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| payroll_service    |
+| performance_schema |
+| person             |
+| sakila             |
+| studentinfo        |
+| sys                |
+| world              |
++--------------------+
+9 rows in set (0.00 sec)
+
+mysql> use payroll_service;		      #using/ entering into the database created
+Database changed
+mysql> select database();			#getting the current/present database name 
++-----------------+
+| database()      |
++-----------------+
+| payroll_service |
++-----------------+
+1 row in set (0.00 sec)
